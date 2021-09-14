@@ -1,0 +1,141 @@
+<script>
+    if(localStorage.getItem("ovsAuth"))
+    {
+        window.location = "profile.html";
+    }
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="./assets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="bg-dark">
+        <ul>
+            <li>
+                <h1>Insight <sub class="text-light"><small>your dreams</small></sub></h1>
+            </li>
+        </ul>
+        <ul class="float-right">
+            <li><span class="material-icons">help_outline</span>How it works</li>
+            <li> <span class="material-icons">person</span><a href="register.html"> Sign Up</a></li>
+            <li>
+                <span class="material-icons"> lock</span><a href="login.html">Log In</a>
+            </li>
+            
+            <li>
+                <span class="material-icons">home</span> <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="bg-img"></div>
+        <div class="header-box">
+            <h1>Don't ignore your dreams </h1>
+            <p>
+                The 5 regrets paint a portation of post industrial man , who shhrinks himself into a shaper that fits
+                his circumstances , then turns dutifully till he stops
+            </p>
+            <div>
+                <button class="btn-green">
+                    See How It Works
+                </button>
+                <button class="btn-blue">
+                    Join us
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                    <h1 class="bold">Login</h1>
+            <form method="GET" action="index.html" novalidate  id="loginForm">
+                <h1 style="color:white">Login</h1>
+                <input class="input" type="email" placeholder="email" name="email">
+                <input class="input" type="password" placeholder="Password" name="password"> 
+                <div style="margin-top: 10px;float:left;margin-left: 40px;">                    
+                </div><br>
+                <input type="submit" id="btnSub" value="Login">
+
+            </form>
+            </div>
+        </div>
+      </main>
+
+        <footer class="bg-dark   display-flex flex-wrap">
+            <div class="text-white col-2">
+                <h3>MAIN</h3>
+                <ul class="text-gray" style="display: inline-block;list-style: none;">
+                    <li>Start Home</li>
+                    <li>Portofolio</li>
+                    <li>media link</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="text-white col-2">
+                <h3>COMPANY</h3>
+                <ul class="text-gray" style="display: inline-block;list-style: none;">
+                    <li>About</li>
+                    <li>Help</li>
+                    <li>Support</li>
+                    <li>Job</li>
+                    <li>Directory</li>
+                </ul>
+            </div>
+            <div class="text-white col-2">
+                <h3>ONE MORE</h3>
+                <ul class="text-gray" style="display: inline-block;list-style: none;">
+                    <li>Meet Up</li>
+                    <li>Handbook</li>
+                    <li>Privacy </li>
+                    <li>API</li>
+                    <li>Equipment</li>
+                </ul>
+            </div>
+            <div class="text-white col-2">
+                <h3>THE LAST ONE</h3>
+                <ul class="text-gray" style="display: inline-block;list-style: none;">
+                    <li>Start Home</li>
+                    <li>Portofolio</li>
+                    <li>media link</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="text-light col-10 flex-wrap">
+                <div class="icon-container text-white">
+                    <span class="material-icons">
+                        flutter_dash
+                    </span>
+                    <span class="material-icons">
+                        verified
+                    </span>
+                    <span class="material-icons">
+                        mail
+                    </span>
+                    <div class="cpy-rights text-gray">
+                        &copy; 2021 Copyright be happy<br>
+                        Privacy Policy . terms conditions
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
